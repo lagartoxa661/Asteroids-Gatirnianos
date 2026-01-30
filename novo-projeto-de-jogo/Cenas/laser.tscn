@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b1jh5ng044hqp"]
+
+[ext_resource type="Script" uid="uid://c1m5coau6aa8y" path="res://Cenas/Scripts/laser.gd" id="1_vj0a6"]
+[ext_resource type="Texture2D" uid="uid://i5edgt5iicd4" path="res://sprites/pixilart-drawing.png" id="2_pdwom"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mb0ws"]
+size = Vector2(6, 16)
+
+[node name="laser" type="Area2D" unique_id=1916693262]
+collision_layer = 8
+collision_mask = 5
+script = ExtResource("1_vj0a6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=964173220]
+texture_filter = 1
+position = Vector2(1, 0)
+rotation = -1.577111
+texture = ExtResource("2_pdwom")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1606424192]
+position = Vector2(1, 16)
+shape = SubResource("RectangleShape2D_mb0ws")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=124749273]
+rect = Rect2(-2, 11, 6, 10)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

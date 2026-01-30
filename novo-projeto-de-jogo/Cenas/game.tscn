@@ -1,5 +1,13 @@
 [gd_scene format=3 uid="uid://b51v05sk2ge1p"]
 
+[ext_resource type="PackedScene" uid="uid://bya5tq7d2rncp" path="res://Cenas/player.tscn" id="1_fd8wr"]
+[ext_resource type="PackedScene" uid="uid://b1jh5ng044hqp" path="res://Cenas/laser.tscn" id="2_csek2"]
+
 [node name="Game" type="Node2D" unique_id=1496068566]
 
-[node name="Player" type="CharacterBody2D" parent="." unique_id=745229953]
+[node name="Player" parent="." unique_id=276037182 instance=ExtResource("1_fd8wr")]
+position = Vector2(543, 313)
+
+[node name="laser" parent="." unique_id=1916693262 instance=ExtResource("2_csek2")]
+position = Vector2(385, 337)
+rotation = 1.5549291

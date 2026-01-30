@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bya5tq7d2rncp"]
+
+[ext_resource type="Script" uid="uid://cr6nri2g7eaxv" path="res://Cenas/Scripts/player.gd" id="1_pmvhq"]
+[ext_resource type="Texture2D" uid="uid://bfmdlow27grgt" path="res://sprites/gatinho asteroid.png" id="1_ytnb3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pmvhq"]
+size = Vector2(94.375, 57.25)
+
+[node name="Player" type="CharacterBody2D" unique_id=276037182]
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1_pmvhq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1105228155]
+texture_filter = 1
+position = Vector2(1, 2)
+scale = Vector2(0.20921053, 0.21217106)
+texture = ExtResource("1_ytnb3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=892947650]
+position = Vector2(-3.1875, -17)
+shape = SubResource("RectangleShape2D_pmvhq")
+
+[node name="Muzzle" type="Node2D" parent="." unique_id=1450793144]
