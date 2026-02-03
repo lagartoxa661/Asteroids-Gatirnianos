@@ -10,8 +10,11 @@ signal laser_shot(laser)
 
 var laser_scene = preload("res://Cenas/laser.tscn")
 
+var shoot_cd = false 
+
 func _process(delta):
-	if Input.is_action_just_pressed("shoot"):
+	if Input.is_action_pressed("shoot"):
+		if !shoot_cd
 		shoot_laser()
 
 func _physics_process(delta):

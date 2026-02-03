@@ -22,4 +22,5 @@ position = Vector2(-3.1875, -17)
 shape = SubResource("RectangleShape2D_pmvhq")
 
 [node name="Muzzle" type="Node2D" parent="." unique_id=1450793144]
-position = Vector2(-67, -21)
+position = Vector2(-60, -15)
+rotation = -1.9324901

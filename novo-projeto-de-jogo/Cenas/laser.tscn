@@ -7,14 +7,16 @@
 size = Vector2(6, 16)
 
 [node name="laser" type="Area2D" unique_id=1916693262]
+rotation = -1.5927929
 collision_layer = 8
 collision_mask = 5
 script = ExtResource("1_vj0a6")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=964173220]
 texture_filter = 1
-position = Vector2(1, 0)
+position = Vector2(2.087493, -3.9550447)
 rotation = -1.577111
+scale = Vector2(1.3235159, 1.2041049)
 texture = ExtResource("2_pdwom")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1606424192]
