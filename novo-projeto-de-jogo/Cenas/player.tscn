@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bya5tq7d2rncp"]
 
 [ext_resource type="Script" uid="uid://cr6nri2g7eaxv" path="res://Cenas/Scripts/player.gd" id="1_pmvhq"]
-[ext_resource type="Texture2D" uid="uid://bfmdlow27grgt" path="res://sprites/gatinho asteroid.png" id="1_ytnb3"]
+[ext_resource type="Texture2D" uid="uid://1ion237k7dpq" path="res://sprites/lagartixa.png" id="2_pmvhq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pmvhq"]
-size = Vector2(94.375, 57.25)
+size = Vector2(15, 54.625)
 
 [node name="Player" type="CharacterBody2D" unique_id=276037182]
 collision_layer = 2
@@ -13,14 +13,15 @@ script = ExtResource("1_pmvhq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1105228155]
 texture_filter = 1
-position = Vector2(1, 2)
-scale = Vector2(0.20921053, 0.21217106)
-texture = ExtResource("1_ytnb3")
+position = Vector2(49.000004, 9.999998)
+rotation = -0.83746296
+scale = Vector2(2.432709, 2.6215732)
+texture = ExtResource("2_pmvhq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=892947650]
-position = Vector2(-3.1875, -17)
+position = Vector2(0.5, -15.6875)
 shape = SubResource("RectangleShape2D_pmvhq")
 
 [node name="Muzzle" type="Node2D" parent="." unique_id=1450793144]
-position = Vector2(-60, -15)
+position = Vector2(-3, -47)
 rotation = -1.9324901
