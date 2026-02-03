@@ -11,11 +11,15 @@ signal laser_shot(laser)
 var laser_scene = preload("res://Cenas/laser.tscn")
 
 var shoot_cd = false 
+var rate_of_fire = 0.15
 
 func _process(delta):
 	if Input.is_action_pressed("shoot"):
-		if !shoot_cd
-		shoot_laser()
+		if !shoot_cd:
+			shoot_cd = true
+			shoot_laser()
+			await get_tree().create_timer(rate_of_fire).timeout
+			shoot_cd = false
 
 func _physics_process(delta):
 	var input_vector := Vector2(0, Input.get_axis("move_forward", "move_backward"))
