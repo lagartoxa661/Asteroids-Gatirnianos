@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b1jh5ng044hqp"]
 
-[ext_resource type="Script" uid="uid://c1m5coau6aa8y" path="res://Cenas/Scripts/laser.gd" id="1_vj0a6"]
+[ext_resource type="Script" uid="uid://c1m5coau6aa8y" path="res://Scripts/laser.gd" id="1_vj0a6"]
 [ext_resource type="Texture2D" uid="uid://i5edgt5iicd4" path="res://sprites/pixilart-drawing.png" id="2_pdwom"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mb0ws"]

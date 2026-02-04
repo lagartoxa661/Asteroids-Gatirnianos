@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bya5tq7d2rncp"]
 
-[ext_resource type="Script" uid="uid://cr6nri2g7eaxv" path="res://Cenas/Scripts/player.gd" id="1_pmvhq"]
+[ext_resource type="Script" uid="uid://cr6nri2g7eaxv" path="res://Scripts/player.gd" id="1_pmvhq"]
 [ext_resource type="Texture2D" uid="uid://1ion237k7dpq" path="res://sprites/lagartixa.png" id="2_pmvhq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pmvhq"]
